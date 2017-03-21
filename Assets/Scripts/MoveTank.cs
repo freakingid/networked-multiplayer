@@ -9,6 +9,11 @@ public class MoveTank : NetworkBehaviour {
 	void Start () {
 		
 	}
+
+	public override void OnStartLocalPlayer()
+	{
+		GetComponent<MeshRenderer> ().material.color = Color.green;
+	}
 	
 	// Update is called once per frame
 	void Update () {
